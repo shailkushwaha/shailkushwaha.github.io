@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shail Samar Kushwaha | Account Manager</title>
+<meta name="description" content="Shail Samar Kushwaha, Account Manager on Pinterest ads in Toronto. New business, account growth, Salesforce, and an AI-first way of working.">
+<meta property="og:title" content="Shail Samar Kushwaha | Account Manager">
+<meta property="og:description" content="Account Manager on Pinterest ads in Toronto. AI-first, with Pinterest, Google, Anthropic, Microsoft and IBM certifications.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff;
+    --side:#0e1726;
+    --text:#1a1f29;
+    --muted:#5f6b7a;
+    --faint:#eef1f5;
+    --line:#e4e8ee;
+    --accent:#0f766e;
+    --accent-soft:#e6f4f2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+
+  .layout{display:grid;grid-template-columns:360px 1fr;min-height:100vh}
+
+  /* sidebar */
+  aside{background:var(--side);color:#dfe5ee;padding:56px 40px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column}
+  .avatar{width:76px;height:76px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800;font-size:1.6rem;letter-spacing:.02em}
+  aside h1{font-size:1.75rem;font-weight:800;color:#fff;line-height:1.2;margin:22px 0 6px}
+  aside .role{color:#9fb0c4;font-size:.98rem}
+  aside .loc{color:#9fb0c4;font-size:.9rem;margin-top:4px}
+  aside nav{margin-top:44px;display:flex;flex-direction:column;gap:4px}
+  aside nav a{color:#9fb0c4;font-size:.95rem;font-weight:500;padding:8px 0;display:flex;align-items:center;gap:12px;transition:color .2s}
+  aside nav a::before{content:"";width:18px;height:2px;background:#3a4a60;transition:width .2s,background .2s}
+  aside nav a:hover,aside nav a.active{color:#fff}
+  aside nav a:hover::before,aside nav a.active::before{width:36px;background:#5eead4}
+  .side-foot{margin-top:auto}
+  .side-foot a{display:block;font-size:.9rem;color:#dfe5ee;padding:5px 0}
+  .side-foot a:hover{color:#5eead4}
+  .open{display:inline-block;margin-top:18px;font-size:.8rem;font-weight:600;color:#5eead4;border:1px solid #2a5a5a;padding:6px 12px;border-radius:6px}
+
+  /* content */
+  main{padding:72px 72px 40px;max-width:880px}
+  section{padding-bottom:72px;margin-bottom:72px;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  h2{font-size:.82rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.12em;margin-bottom:18px}
+  .intro{font-size:1.6rem;font-weight:700;line-height:1.35;letter-spacing:-.01em;max-width:640px}
+  .intro span{color:var(--accent)}
+  .body{color:var(--muted);margin-top:18px;max-width:620px;font-size:1.02rem}
+  .numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+  .numbers div{background:var(--faint);border-radius:10px;padding:18px 20px}
+  .numbers b{display:block;font-size:1.6rem;font-weight:800;line-height:1.2}
+  .numbers span{font-size:.86rem;color:var(--muted)}
+
+  /* AI */
+  .highlight{border-left:3px solid var(--accent);background:var(--accent-soft);padding:24px 26px;border-radius:0 10px 10px 0;margin-bottom:32px}
+  .highlight h3{font-size:1.15rem;font-weight:700;margin-bottom:6px}
+  .highlight p{color:#33424f;font-size:.98rem}
+  .tools{display:flex;flex-direction:column}
+  .tool{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:18px 0;border-top:1px solid var(--line)}
+  .tool:last-child{border-bottom:1px solid var(--line)}
+  .tool h4{font-size:1rem;font-weight:700}
+  .tool p{color:var(--muted);font-size:.95rem}
+  .rollout{margin-top:32px;padding:22px 26px;border:1px solid var(--line);border-radius:10px}
+  .rollout h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+  .rollout p{color:var(--muted);font-size:.95rem}
+
+  /* certs */
+  .cert-cat{font-size:.95rem;font-weight:700;margin:28px 0 10px}
+  .cert-cat:first-of-type{margin-top:0}
+  .cert{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .logo{flex:none;width:44px;height:44px;border-radius:10px;border:1px solid var(--line);background:#fff;display:grid;place-items:center;overflow:hidden;font-weight:800;color:#fff}
+  .logo img{width:26px;height:26px;object-fit:contain}
+  .cert .name{flex:1}
+  .cert .name b{display:block;font-size:.98rem;font-weight:600}
+  .cert .name small{color:var(--muted);font-size:.85rem}
+  .cert .date{font-size:.85rem;color:var(--muted);white-space:nowrap}
+  .verify{display:inline-block;margin-top:22px;font-weight:600;color:var(--accent);font-size:.95rem}
+  .verify:hover{text-decoration:underline}
+
+  /* experience */
+  .job{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:22px 0}
+  .job + .job{border-top:1px solid var(--line)}
+  .job .when{font-size:.85rem;color:var(--muted);padding-top:3px}
+  .job h3{font-size:1.08rem;font-weight:700;line-height:1.35}
+  .job .org{color:var(--accent);font-weight:600;font-size:.92rem;margin:2px 0 10px}
+  .job ul{padding-left:18px;color:var(--muted);font-size:.95rem}
+  .job li{margin-bottom:5px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .tags span{font-size:.76rem;font-weight:600;background:var(--faint);color:#3b4756;padding:4px 10px;border-radius:5px}
+  .earlier{color:var(--muted);font-size:.93rem;margin-top:16px}
+
+  /* education */
+  .edu{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .edu b{font-weight:600;font-size:.98rem}
+  .edu small{display:block;color:var(--muted);font-size:.86rem}
+  .edu .yr{color:var(--muted);font-size:.86rem;white-space:nowrap}
+
+  /* contact */
+  .contact-line{font-size:1.5rem;font-weight:700;line-height:1.35;max-width:560px}
+  .contact-btns{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+  .btn{padding:12px 22px;border-radius:8px;font-weight:600;font-size:.95rem}
+  .btn.solid{background:var(--accent);color:#fff}
+  .btn.solid:hover{background:#0b5f58}
+  .btn.line{border:1px solid var(--line)}
+  .btn.line:hover{border-color:var(--accent);color:var(--accent)}
+  footer{color:var(--muted);font-size:.82rem;padding:0 72px 40px}
+
+  @media (max-width:980px){
+    .layout{grid-template-columns:1fr}
+    aside{position:relative;height:auto;padding:40px 28px}
+    aside nav{display:none}
+    .side-foot{margin-top:24px}
+    main{padding:48px 28px 24px}
+    footer{padding:0 28px 32px}
+    .numbers{grid-template-columns:1fr}
+    .tool,.job{grid-template-columns:1fr;gap:4px}
+    .intro{font-size:1.35rem}
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+
+<aside>
+  <div class="avatar">SK</div>
+  <h1>Shail Samar Kushwaha</h1>
+  <div class="role">Account Manager, Pinterest Ads</div>
+  <div class="loc">Toronto, Canada</div>
+  <nav id="nav">
+    <a href="#about">About</a>
+    <a href="#ai">How I use AI</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="side-foot">
+    <a href="mailto:shail97@hotmail.com">shail97@hotmail.com</a>
+    <a href="https://www.linkedin.com/in/kushwahashail" target="_blank" rel="noopener">LinkedIn</a>
+    <span class="open">Open to Account Management roles</span>
+  </div>
+</aside>
+
+<main>
+
+<section id="about">
+  <h2>About</h2>
+  <p class="intro">I help advertisers grow on Pinterest, and I use <span>AI tools every day</span> to find the right accounts and the right conversations faster.</p>
+  <p class="body">I'm an Account Manager on Pinterest's SMB advertising team, working through Teleperformance Canada. I handle new business and grow existing accounts: consultative sales calls, account health checks, growth plans and regular business reviews. Before this I worked in B2B SaaS business development and high-volume consultative sales in London and Toronto. I started my career in sales and exports in Mumbai.</p>
+  <div class="numbers">
+    <div><b>£35K+</b><span>closed in six months as a freelance SaaS BDR</span></div>
+    <div><b>125%</b><span>of quota, every intake, at Global Banking School</span></div>
+    <div><b>10</b><span>certifications in AI, advertising and product</span></div>
+  </div>
+</section>
+
+<section id="ai">
+  <h2>How I use AI</h2>
+  <div class="highlight">
+    <h3>I built an agent that reviews my book of business</h3>
+    <p>It runs on Helix every day and every week. It goes through my assigned advertiser accounts, flags issues with account health, and suggests next steps. I start each morning knowing which accounts need attention and why.</p>
+  </div>
+
+  <div class="tools">
+    <div class="tool"><h4>Pinterest's internal AI analytics tool</h4><p>For advertiser and performance insight that feeds into account growth plans.</p></div>
+    <div class="tool"><h4>Helix</h4><p>Where my book-of-business agent runs.</p></div>
+    <div class="tool"><h4>Glean</h4><p>Searching internal knowledge for product, policy and playbook answers.</p></div>
+    <div class="tool"><h4>Gemini</h4><p>Research and summarising. I cross-check what it finds against the other tools before acting on a trend.</p></div>
+    <div class="tool"><h4>Custom GPTs</h4><p>GPTs I built for prospect research, personalised outreach, call summaries and follow-up emails.</p></div>
+    <div class="tool"><h4>Power Automate</h4><p>Workflows for outreach cadences, activity logging and re-engaging inactive leads.</p></div>
+    <div class="tool"><h4>Claude</h4><p>Daily drafting, analysis and project work.</p></div>
+    <div class="tool"><h4>Salesforce</h4><p>My CRM for pipeline, opportunities and account management.</p></div>
+  </div>
+
+  <div class="rollout">
+    <h3>Bringing Pinterest's AI ad features to small businesses</h3>
+    <p>I'm on the team rolling out Pinterest's AI-powered advertising features to SMB advertisers across North America. I help advertisers understand and adopt the features, and share their feedback with the program team.</p>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+
+  <div class="cert-cat">AI</div>
+  <div class="cert"><div class="logo" data-fb="#c96442" data-l="A"><img src="https://www.google.com/s2/favicons?domain=anthropic.com&amp;sz=128" alt="Anthropic"></div><div class="name"><b>AI Fluency: Framework &amp; Foundations</b><small>Anthropic</small></div><div class="date">Jul 2026</div></div>
+  <div class="cert"><div class="logo" data-fb="#c96442" data-l="A"><img src="https://www.google.com/s2/favicons?domain=anthropic.com&amp;sz=128" alt="Anthropic"></div><div class="name"><b>Claude Code 101</b><small>Anthropic</small></div><div class="date">Aug 2026</div></div>
+  <div class="cert"><div class="logo" data-fb="#c96442" data-l="A"><img src="https://www.google.com/s2/favicons?domain=anthropic.com&amp;sz=128" alt="Anthropic"></div><div class="name"><b>Claude 101</b><small>Anthropic</small></div><div class="date">Jun 2026</div></div>
+  <div class="cert"><div class="logo" data-fb="#2f6fb5" data-l="M"><img src="https://www.google.com/s2/favicons?domain=microsoft.com&amp;sz=128" alt="Microsoft"></div><div class="name"><b>Career Essentials in Generative AI</b><small>Microsoft &amp; LinkedIn</small></div><div class="date">Aug 2026</div></div>
+
+  <div class="cert-cat">Advertising</div>
+  <div class="cert"><div class="logo" data-fb="#b3122b" data-l="P"><img src="https://www.google.com/s2/favicons?domain=pinterest.com&amp;sz=128" alt="Pinterest"></div><div class="name"><b>Pinterest Certified Media Planner</b><small>Pinterest</small></div><div class="date">Sep 2026</div></div>
+  <div class="cert"><div class="logo" data-fb="#b3122b" data-l="P"><img src="https://www.google.com/s2/favicons?domain=pinterest.com&amp;sz=128" alt="Pinterest"></div><div class="name"><b>Pinterest Advertising Essentials</b><small>Pinterest</small></div><div class="date">Sep 2026</div></div>
+  <div class="cert"><div class="logo" data-fb="#b3122b" data-l="P"><img src="https://www.google.com/s2/favicons?domain=pinterest.com&amp;sz=128" alt="Pinterest"></div><div class="name"><b>Pinterest Performance Essentials</b><small>Pinterest</small></div><div class="date">Sep 2026</div></div>
+  <div class="cert"><div class="logo" data-fb="#b3122b" data-l="P"><img src="https://www.google.com/s2/favicons?domain=pinterest.com&amp;sz=128" alt="Pinterest"></div><div class="name"><b>Pinterest Shopping Essentials</b><small>Pinterest</small></div><div class="date">Sep 2026</div></div>
+  <div class="cert"><div class="logo" data-fb="#2a8a57" data-l="G"><img src="https://www.google.com/s2/favicons?domain=google.com&amp;sz=128" alt="Google"></div><div class="name"><b>Google Ads Search Certification</b><small>Google</small></div><div class="date">Sep 2026</div></div>
+
+  <div class="cert-cat">Product</div>
+  <div class="cert"><div class="logo" data-fb="#1f3f8f" data-l="IBM"><img src="https://www.google.com/s2/favicons?domain=ibm.com&amp;sz=128" alt="IBM"></div><div class="name"><b>Product Management</b><small>IBM</small></div><div class="date">Dec 2025</div></div>
+
+  <a class="verify" href="https://www.linkedin.com/in/kushwahashail/details/certifications/" target="_blank" rel="noopener">Verify credentials on LinkedIn →</a>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="when">Sep 2026 – Present</div>
+    <div>
+      <h3>Account Manager (SMB)</h3>
+      <div class="org">Pinterest, via Teleperformance Canada</div>
+      <ul>
+        <li>Run consultative sales conversations with prospective advertisers and close new business.</li>
+        <li>Own advertiser relationships after the sale. I track account health, build growth plans and run business reviews.</li>
+        <li>Find upsell and cross-sell opportunities that match what each advertiser is trying to achieve.</li>
+        <li>Work with program leads on improving lead quality, conversion and advertiser engagement.</li>
+      </ul>
+      <div class="tags"><span>Salesforce</span><span>Account growth</span><span>New business</span><span>AI ads rollout</span></div>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="when">Oct 2025 – Sep 2026</div>
+    <div>
+      <h3>Admissions Advisor (Inbound Consultative Sales)</h3>
+      <div class="org">Canadian Business College, Toronto</div>
+      <ul>
+        <li>80–120 customer conversations a day across phone, email, text and video. Beat monthly and quarterly targets consistently.</li>
+        <li>Built custom GPTs and Power Automate workflows to handle follow-ups.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="when">Oct 2024 – Aug 2025</div>
+    <div>
+      <h3>Business Development Representative (Freelance, Remote)</h3>
+      <div class="org">Zilter.io, London</div>
+      <ul>
+        <li>Closed £35,000+ personally in six months and helped sign 8 new institutional partners.</li>
+        <li>Built a 200+ lead pipeline in HubSpot from 150+ cold calls a month, with a 20% MQL-to-SQL rate.</li>
+      </ul>
+      <div class="tags"><span>B2B SaaS</span><span>HubSpot</span><span>Outbound</span></div>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="when">Oct 2023 – May 2025</div>
+    <div>
+      <h3>Student Recruitment Officer</h3>
+      <div class="org">Global Banking School, London</div>
+      <ul>
+        <li>Hit 125% of quota every intake: 125+ enrolments and around £1.5M in tuition revenue per cohort.</li>
+        <li>Designed a Power Automate and AI chatbot workflow that re-engaged inactive leads automatically.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="when">Aug 2023 – Oct 2023</div>
+    <div>
+      <h3>Admissions Clearing Officer</h3>
+      <div class="org">University College Birmingham</div>
+      <ul><li>High-volume phone sales during UK Clearing. Met upsell targets consistently.</li></ul>
+    </div>
+  </div>
+
+  <p class="earlier">Earlier in Mumbai (2016–2021): Head of Sales &amp; Exports at Fresh India Organics, Senior Sales Manager at Gouris Goodies, and co-founder of GNE Organics.</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="edu"><div><b>M.Sc. Enterprise Management (Digital Media &amp; Marketing)</b><small>University of Warwick, UK</small></div><div class="yr">2023</div></div>
+  <div class="edu"><div><b>Level 7 Certificate in Management &amp; Leadership</b><small>Chartered Management Institute, UK</small></div><div class="yr">2023</div></div>
+  <div class="edu"><div><b>Master of Commerce</b><small>University of Mumbai</small></div><div class="yr">2018</div></div>
+  <div class="edu"><div><b>Bachelor of Management Studies</b><small>University of Mumbai</small></div><div class="yr">2015</div></div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="contact-line">Hiring for account management or B2B sales? I'd be glad to talk.</p>
+  <div class="contact-btns">
+    <a class="btn solid" href="mailto:shail97@hotmail.com">Email me</a>
+    <a class="btn line" href="https://www.linkedin.com/in/kushwahashail" target="_blank" rel="noopener">Connect on LinkedIn</a>
+  </div>
+</section>
+
+</main>
+</div>
+<footer>© 2026 Shail Samar Kushwaha</footer>
+
+<script>
+  // Fallback if a logo can't load
+  function fallback(img){
+    var box = img.parentNode;
+    if(!box) return;
+    box.style.background = box.dataset.fb;
+    box.style.border = '0';
+    box.textContent = box.dataset.l;
+    box.style.fontSize = box.dataset.l.length > 1 ? '.75rem' : '1rem';
+  }
+  document.querySelectorAll('.logo img').forEach(function(img){
+    if(img.complete && img.naturalWidth === 0){ fallback(img); }
+    else { img.addEventListener('error', function(){ fallback(img); }); }
+  });
+  // Highlight current section in sidebar
+  var links = document.querySelectorAll('#nav a');
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(l){ l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id); });
+      }
+    });
+  }, {rootMargin:'-40% 0px -55% 0px'});
+  document.querySelectorAll('main section').forEach(function(s){ obs.observe(s); });
+</script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shail Kushwaha | Application: Account Manager, Instacart Ads</title>
+<meta name="description" content="Shail Kushwaha's application for the Account Manager role on Instacart Ads: advertiser growth, CPG experience and an AI-first way of working.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--green:#0a8a2e;--green-dark:#06591e;--green-soft:#e9f6ec;--orange:#f36d0f;--orange-soft:#fff1e6;--cream:#faf8f3;--text:#1b2420;--muted:#5b6660;--line:#e5e8e3}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--text);background:#fff;line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 28px}
+  .bar{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
+  .bar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+  .me{font-weight:800;font-size:1rem;text-decoration:none}
+  .me span{color:var(--green)}
+  .bar nav{display:flex;gap:22px}
+  .bar nav a{text-decoration:none;font-size:.9rem;font-weight:600;color:var(--muted)}
+  .bar nav a:hover{color:var(--green)}
+  .hero{background:var(--green-dark);color:#fff;padding:72px 0 64px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:var(--green);opacity:.55}
+  .hero .wrap{position:relative;z-index:1}
+  .pill{display:inline-block;background:var(--orange);color:#fff;font-weight:700;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+  .hero h1{font-size:2.6rem;line-height:1.15;font-weight:800;letter-spacing:-.02em;margin:20px 0 16px;max-width:760px}
+  .hero h1 em{font-style:normal;color:#ffd2b0}
+  .hero p{color:#d6eadb;font-size:1.1rem;max-width:640px}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+  .stat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:18px}
+  .stat b{display:block;font-size:1.8rem;font-weight:800;line-height:1.1}
+  .stat span{font-size:.84rem;color:#d6eadb}
+  section{padding:72px 0;border-bottom:1px solid var(--line)}
+  section.alt{background:var(--cream)}
+  .eyebrow{color:var(--green);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+  h2{font-size:1.9rem;font-weight:800;letter-spacing:-.01em;margin:8px 0 10px;line-height:1.2}
+  .lede{color:var(--muted);max-width:660px;font-size:1.02rem}
+  .match{margin-top:36px;display:flex;flex-direction:column;gap:12px}
+  .row{display:grid;grid-template-columns:1fr 1.4fr;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+  .row .ask{background:var(--green-soft);padding:18px 22px;font-weight:700;font-size:.98rem;display:flex;align-items:center}
+  .row .proof{padding:18px 22px;color:#36413b;font-size:.95rem}
+  .row .proof b{color:var(--text)}
+  .heads{display:grid;grid-template-columns:1fr 1.4fr;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:0 22px}
+  .disclaimer{display:inline-block;margin-top:14px;background:var(--orange-soft);color:#9a420a;font-size:.85rem;font-weight:600;padding:8px 12px;border-radius:8px}
+  .qbr{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 30px rgba(20,40,25,.06);overflow:hidden}
+  .qbr-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding:24px 28px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  .qbr-head h3{font-size:1.25rem;font-weight:800}
+  .qbr-head small{color:var(--muted);font-size:.88rem}
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}
+  .kpi{padding:20px 28px;border-right:1px solid var(--line)}
+  .kpi:last-child{border-right:0}
+  .kpi span{display:block;color:var(--muted);font-size:.82rem;font-weight:600}
+  .kpi b{display:block;font-size:1.6rem;font-weight:800;margin:2px 0}
+  .up{color:var(--green);font-weight:700;font-size:.85rem}
+  .down{color:#c2410c;font-weight:700;font-size:.85rem}
+  .qbr-body{display:grid;grid-template-columns:1.1fr 1fr}
+  .chart{padding:24px 28px;border-right:1px solid var(--line)}
+  .chart h4,.recs h4{font-size:.95rem;font-weight:700;margin-bottom:16px}
+  .bars{display:flex;align-items:flex-end;gap:14px;height:170px;border-bottom:1px solid var(--line);padding-bottom:2px}
+  .bars div{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:6px}
+  .bars i{display:block;width:100%;border-radius:6px 6px 0 0;background:var(--green)}
+  .bars div:last-child i{background:var(--orange)}
+  .bars small{font-size:.75rem;color:var(--muted)}
+  .labels{display:flex;gap:14px;margin-top:6px}
+  .labels span{flex:1;text-align:center;font-size:.75rem;color:var(--muted)}
+  .note{font-size:.84rem;color:var(--muted);margin-top:14px}
+  .recs{padding:24px 28px}
+  .rec{display:flex;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
+  .rec:first-of-type{border-top:0;padding-top:0}
+  .rec .n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--green-soft);color:var(--green);font-weight:800;display:grid;place-items:center;font-size:.85rem}
+  .rec p{font-size:.92rem;color:#36413b}
+  .rec p b{display:block;color:var(--text);font-size:.95rem}
+  .tag{display:inline-block;font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+  .tag.opt{background:var(--green-soft);color:var(--green)}
+  .tag.ups{background:var(--orange-soft);color:#b45309}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+  .card.feature{grid-column:1 / -1;background:var(--green-dark);color:#fff;border:0}
+  .card.feature p{color:#d6eadb}
+  .card h3{font-size:1.1rem;font-weight:800;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:.95rem}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+  .steps div{background:rgba(255,255,255,.1);border-radius:12px;padding:14px 16px;font-size:.9rem;color:#e7f3ea}
+  .steps b{display:block;color:#ffd2b0;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+  .cpg{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:28px}
+  .cpg ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+  .cpg li{padding-left:28px;position:relative;color:#36413b}
+  .cpg li::before{content:"";position:absolute;left:0;top:8px;width:12px;height:12px;border-radius:50%;background:var(--orange)}
+  .quote{background:var(--orange-soft);border-radius:16px;padding:26px;font-size:1.1rem;font-weight:700;line-height:1.45;color:#6b2d06}
+  .certs{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .certs span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:.88rem;font-weight:600}
+  .certs span.hot{border-color:var(--green);color:var(--green-dark);background:var(--green-soft)}
+  .cta{background:var(--green-dark);color:#fff;border-bottom:0}
+  .cta h2{color:#fff}
+  .cta .lede{color:#d6eadb}
+  .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+  .btn{text-decoration:none;font-weight:700;padding:13px 22px;border-radius:999px;font-size:.95rem}
+  .btn.solid{background:var(--orange);color:#fff}
+  .btn.solid:hover{background:#d95c06}
+  .btn.line{border:1px solid rgba(255,255,255,.4);color:#fff}
+  .btn.line:hover{border-color:#fff}
+  footer{padding:24px 0 36px;color:var(--muted);font-size:.82rem}
+  @media (max-width:860px){
+    .bar nav{display:none}
+    .hero h1{font-size:1.9rem}
+    .stats,.kpis{grid-template-columns:1fr 1fr}
+    .kpi:nth-child(2){border-right:0}
+    .kpi{border-bottom:1px solid var(--line)}
+    .row,.heads{grid-template-columns:1fr}
+    .heads{display:none}
+    .qbr-body,.grid2,.cpg,.steps{grid-template-columns:1fr}
+    .chart{border-right:0;border-bottom:1px solid var(--line)}
+  }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="wrap">
+    <a class="me" href="https://shailkushwaha.github.io">Shail <span>Kushwaha</span></a>
+    <nav>
+      <a href="#fit">The fit</a>
+      <a href="#sample">Sample review</a>
+      <a href="#ai">AI workflow</a>
+      <a href="#cpg">CPG background</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="pill">Application · Account Manager, Instacart Ads</span>
+    <h1>I already grow advertisers on Pinterest. I'd like to help <em>CPG brands grow on Instacart.</em></h1>
+    <p>I'm an Account Manager on Pinterest's advertising business, where I build and optimize campaigns, send weekly performance reports and run business reviews with advertisers. I started my career selling a CPG food brand. This page shows how that lines up with what you're hiring for.</p>
+    <div class="stats">
+      <div class="stat"><b>28%</b><span>upsell across my total book of advertisers at Pinterest</span></div>
+      <div class="stat"><b>125%</b><span>of quota, every intake, at Global Banking School</span></div>
+      <div class="stat"><b>£35K+</b><span>closed in six months as a solo SaaS BDR</span></div>
+      <div class="stat"><b>4</b><span>AI tools I use daily to analyse accounts and trends</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="fit">
+  <div class="wrap">
+    <div class="eyebrow">The fit</div>
+    <h2>What the role asks for, and what I've done</h2>
+    <p class="lede">Each row is a responsibility or qualification from the job posting, matched to work I've actually done.</p>
+    <div class="match">
+      <div class="heads"><span>You're looking for</span><span>What I bring</span></div>
+      <div class="row"><div class="ask">Main point of contact after the sale: setup, optimization, reporting, performance</div><div class="proof"><b>That's my job today.</b> At Pinterest I own advertiser relationships after the sale, build and optimize their campaigns, and keep an eye on account health.</div></div>
+      <div class="row"><div class="ask">Weekly reports with recommendations to improve performance</div><div class="proof"><b>Weekly reports with charts and dashboards.</b> I also help advertisers build custom reports and schedule them to arrive in their own inbox.</div></div>
+      <div class="row"><div class="ask">A persuasive story that gets advertisers to optimize and upsell</div><div class="proof"><b>28% upsell across my total book of business.</b> I build account growth plans that tie each advertiser's goals to the right ad products.</div></div>
+      <div class="row"><div class="ask">Cadence calls and QBRs using data visualization</div><div class="proof"><b>I run regular business reviews</b> with advertisers to go through results, surface optimization ideas and open new opportunities.</div></div>
+      <div class="row"><div class="ask">Category and advertiser-specific trends and insights</div><div class="proof"><b>AI-assisted analysis every day.</b> I triangulate account data and trends across four AI tools, and a custom agent I built reviews my whole book daily and weekly.</div></div>
+      <div class="row"><div class="ask">Knowledge of CPG or e-commerce</div><div class="proof"><b>Both.</b> I led sales and exports for an organic food brand and directed the agency running its Google and Meta ads to grow online sales.</div></div>
+      <div class="row"><div class="ask">Deep understanding of evolving ad products</div><div class="proof"><b>I'm on the team rolling out Pinterest's AI ad features</b> to SMB advertisers across North America. I'm also Pinterest Media Planner and Google Ads Search certified.</div></div>
+      <div class="row"><div class="ask">Salesforce, Excel, Google Workspace; Tableau and Mode a plus</div><div class="proof"><b>Salesforce is my daily CRM.</b> Excel and Google Sheets (pivots, XLOOKUP), Slides for reviews. I haven't used Tableau or Mode yet and would ramp up on them fast.</div></div>
+      <div class="row"><div class="ask">Works independently and manages multiple priorities</div><div class="proof"><b>I ran the full BDR function solo</b> at Zilter.io with no team behind me, and I juggled 80–120 customer conversations a day at Canadian Business College.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="sample" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Sample work</div>
+    <h2>What a weekly review from me would look like</h2>
+    <p class="lede">A one-page snapshot for a CPG advertiser: what happened, why, and the two or three things to do next.</p>
+    <span class="disclaimer">Illustrative only: the brand and every number below are made up.</span>
+    <div class="qbr">
+      <div class="qbr-head">
+        <div><h3>Harvest Lane Snacks · Weekly performance review</h3><small>Example CPG brand · Sponsored product + display campaigns</small></div>
+        <small>Week 6 of 8 · vs. previous week</small>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><span>Attributed sales</span><b>$18.4K</b><span class="up">▲ 12%</span></div>
+        <div class="kpi"><span>ROAS</span><b>4.1x</b><span class="up">▲ 0.3x</span></div>
+        <div class="kpi"><span>Click-through rate</span><b>1.9%</b><span class="down">▼ 0.2 pts</span></div>
+        <div class="kpi"><span>New-to-brand buyers</span><b>41%</b><span class="up">▲ 5 pts</span></div>
+      </div>
+      <div class="qbr-body">
+        <div class="chart">
+          <h4>Attributed sales by week ($K)</h4>
+          <div class="bars">
+            <div><small>11.2</small><i style="height:55%"></i></div>
+            <div><small>12.8</small><i style="height:63%"></i></div>
+            <div><small>13.1</small><i style="height:65%"></i></div>
+            <div><small>15.0</small><i style="height:74%"></i></div>
+            <div><small>16.4</small><i style="height:81%"></i></div>
+            <div><small>18.4</small><i style="height:91%"></i></div>
+          </div>
+          <div class="labels"><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span></div>
+          <p class="note">Sales growth came mostly from the "healthy snacks" search terms added in week 4. Click-through rate dipped on the two oldest creatives.</p>
+        </div>
+        <div class="recs">
+          <h4>Recommendations</h4>
+          <div class="rec"><div class="n">1</div><p><b>Refresh the two tired creatives <span class="tag opt">Optimize</span></b>Their click-through rate fell for three weeks running. Swap in the new back-to-school pack shots and retest within 7 days.</p></div>
+          <div class="rec"><div class="n">2</div><p><b>Shift 15% of budget to the top search terms <span class="tag opt">Optimize</span></b>"Healthy snacks" and "lunchbox snacks" return at almost twice the account average.</p></div>
+          <div class="rec"><div class="n">3</div><p><b>Add display ads for the January wellness peak <span class="tag ups">Upsell</span></b>The category trend points to a January lift. Reaching new-to-brand shoppers before it starts protects share.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ai">
+  <div class="wrap">
+    <div class="eyebrow">AI-first</div>
+    <h2>How I use AI to stay ahead of my accounts</h2>
+    <p class="lede">I treat AI as leverage. It helps me spot what's changing in an account before the advertiser asks.</p>
+    <div class="grid2">
+      <div class="card feature">
+        <h3>A custom agent that reviews my book of business</h3>
+        <p>I built it on Helix. It runs daily and weekly deep dives across my assigned advertisers, flags issues and suggests next actions.</p>
+        <div class="steps">
+          <div><b>1 · Gather</b>Pulls account and performance data across my book.</div>
+          <div><b>2 · Flag</b>Spots accounts with health issues or growth signals.</div>
+          <div><b>3 · Act</b>Suggests the next step, so I start the day knowing who to call and why.</div>
+        </div>
+      </div>
+      <div class="card"><h3>Four tools, one answer</h3><p>Pinterest's internal AI analytics tool, Helix, Glean and Gemini. I use them to gather, process and cross-check data and trends before I make a recommendation.</p></div>
+      <div class="card"><h3>Custom GPTs and automation</h3><p>Custom GPTs I built for account research, call summaries and follow-up drafts, plus Power Automate workflows for follow-up and re-engaging quiet leads.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="cpg" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">CPG background</div>
+    <h2>I've been on the brand side</h2>
+    <div class="cpg">
+      <ul>
+        <li><b>Head of Sales &amp; Exports, Fresh India Organics (2019–2021).</b> Owned B2B and international export accounts for an organic food brand, from prospecting through repeat business.</li>
+        <li><b>E-commerce growth.</b> Briefed and directed the agency running the brand's Google and Meta ads to grow online sales.</li>
+        <li><b>Earlier:</b> Senior Sales Manager at Gouris Goodies and co-founder of GNE Organics in Mumbai.</li>
+      </ul>
+      <div class="quote">I know what a CPG brand needs from a retail media partner: proof that the spend is moving product, and ideas for what to do next.</div>
+    </div>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="wrap">
+    <div class="eyebrow">Certifications</div>
+    <h2>Advertising and AI credentials</h2>
+    <div class="certs">
+      <span class="hot">Pinterest Certified Media Planner</span>
+      <span class="hot">Pinterest Performance Essentials</span>
+      <span class="hot">Pinterest Shopping Essentials</span>
+      <span class="hot">Google Ads Search Certification</span>
+      <span>Pinterest Advertising Essentials</span>
+      <span>Anthropic: AI Fluency</span>
+      <span>Anthropic: Claude 101</span>
+      <span>Anthropic: Claude Code 101</span>
+      <span>Microsoft &amp; LinkedIn: Generative AI</span>
+      <span>IBM: Product Management</span>
+    </div>
+    <p class="lede" style="margin-top:22px">M.Sc. Enterprise Management (Digital Media &amp; Marketing), University of Warwick · CMI Level 7 · Master of Commerce and BMS, University of Mumbai.</p>
+  </div>
+</section>
+
+<section id="contact" class="cta">
+  <div class="wrap">
+    <h2>Let's talk about growing your advertisers</h2>
+    <p class="lede">Based in Toronto, Ontario, and set up to work remotely.</p>
+    <div class="btns">
+      <a class="btn solid" href="mailto:shail97@hotmail.com?subject=Instacart%20Account%20Manager">Email me</a>
+      <a class="btn line" href="https://www.linkedin.com/in/kushwahashail" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn line" href="https://shailkushwaha.github.io">Full profile</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><footer>© 2026 Shail Samar Kushwaha · Personal application page. Not affiliated with or endorsed by Instacart.</footer></div>
+
+</body>
+</html>

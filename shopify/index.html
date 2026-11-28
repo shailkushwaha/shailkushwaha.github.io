@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shail Kushwaha | Application: Merchant Support Advisor, Shopify</title>
+<meta name="description" content="Shail Kushwaha's application for Merchant Support Advisor, Canada Pacific: a teaching video, certifications, and 20 When / If / Then automation prompts for merchants.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--green:#008060;--green-dark:#004c3f;--green-soft:#e3f1df;--bg:#f1f1f1;--card:#fff;--text:#303030;--muted:#616161;--line:#e3e3e3;
+        --when-bg:#e0f0ff;--when-fg:#00527c;--if-bg:#ffeb78;--if-fg:#4f4700;--then-bg:#cdfee1;--then-fg:#0c5132}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .bar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+  .bar .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+  .me{font-weight:800;text-decoration:none}
+  .me span{color:var(--green)}
+  .bar nav{display:flex;gap:22px}
+  .bar nav a{text-decoration:none;font-size:.9rem;font-weight:600;color:var(--muted)}
+  .bar nav a:hover{color:var(--green)}
+  .hero{background:var(--green-dark);color:#fff;padding:64px 0 56px}
+  .hero .wrap{display:grid;grid-template-columns:1.35fr 1fr;gap:40px;align-items:center}
+  .pill{display:inline-block;background:#fff;color:var(--green-dark);font-weight:700;font-size:.78rem;letter-spacing:.04em;padding:6px 12px;border-radius:999px}
+  .hero h1{font-size:2.5rem;line-height:1.12;font-weight:800;letter-spacing:-.02em;margin:18px 0 14px}
+  .hero h1 em{font-style:normal;color:#b4fed2}
+  .hero p{color:#d4ebe4;font-size:1.06rem}
+  .hero .btns{margin-top:24px}
+  .video{background:#000;border-radius:18px;overflow:hidden;aspect-ratio:9/16;max-height:560px;margin:0 auto;width:100%;max-width:315px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+  .video iframe{width:100%;height:100%;border:0;display:block}
+  section{padding:64px 0}
+  .eyebrow{color:var(--green);font-weight:700;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase}
+  h2{font-size:1.85rem;font-weight:800;letter-spacing:-.01em;margin:8px 0 10px;line-height:1.2}
+  .lede{color:var(--muted);max-width:700px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 1px 0 rgba(0,0,0,.04)}
+  /* certifications */
+  .certs{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin-top:26px}
+  .cert{padding:16px 18px;display:flex;flex-direction:column;gap:4px}
+  .cert small{font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .cert b{font-size:.98rem;line-height:1.3}
+  .cert span{font-size:.8rem;color:var(--muted)}
+  .cert.ai small{color:var(--green)}
+  .edu{margin-top:14px;font-size:.92rem;color:var(--muted)}
+  /* prompts */
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+  .filters button{font:inherit;font-size:.88rem;font-weight:600;border:1px solid var(--line);background:#fff;color:var(--text);padding:8px 14px;border-radius:999px;cursor:pointer;min-height:40px}
+  .filters button[aria-pressed=true]{background:var(--text);color:#fff;border-color:var(--text)}
+  .prompts{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:20px}
+  .prompt{padding:20px;display:flex;flex-direction:column;gap:12px}
+  .prompt header{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+  .prompt h3{font-size:1.02rem;font-weight:700;line-height:1.3}
+  .num{flex:none;font-size:.75rem;font-weight:700;color:var(--muted);background:var(--bg);border-radius:999px;padding:2px 9px}
+  .cat{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green)}
+  .line{display:flex;gap:10px;align-items:flex-start;font-size:.93rem}
+  .b{flex:none;font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:999px;min-width:52px;text-align:center;margin-top:1px}
+  .b.w{background:var(--when-bg);color:var(--when-fg)}
+  .b.i{background:var(--if-bg);color:var(--if-fg)}
+  .b.t{background:var(--then-bg);color:var(--then-fg)}
+  .copy{margin-top:auto;align-self:flex-start;font:inherit;font-size:.85rem;font-weight:600;border:1px solid var(--line);background:#fff;padding:7px 12px;border-radius:10px;cursor:pointer;min-height:38px}
+  .copy:hover{border-color:var(--green);color:var(--green)}
+  .tip{margin-top:22px;padding:16px 20px;border-radius:14px;background:#fff8db;border:1px solid #f1d46b;color:#4f4700;font-size:.93rem}
+  .tip b{color:#3b3500}
+  /* teach */
+  .teach{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+  .teach .card{padding:22px}
+  .teach h3{font-size:1.05rem;font-weight:700;margin:6px 0}
+  .teach p{color:var(--muted);font-size:.94rem}
+  /* fit */
+  .match{margin-top:26px;display:flex;flex-direction:column;gap:10px}
+  .row{display:grid;grid-template-columns:1fr 1.5fr;overflow:hidden}
+  .row .ask{background:var(--green-soft);padding:16px 20px;font-weight:700;font-size:.95rem;display:flex;align-items:center}
+  .row .proof{padding:16px 20px;font-size:.94rem;color:#3d3d3d}
+  .row .proof b{color:var(--text)}
+  .cta{background:var(--green-dark);color:#fff}
+  .cta .lede{color:#d4ebe4}
+  .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+  .btn{text-decoration:none;font-weight:700;padding:12px 20px;border-radius:12px;font-size:.95rem}
+  .btn.solid{background:#fff;color:var(--green-dark)}
+  .btn.line{border:1px solid rgba(255,255,255,.45);color:#fff}
+  footer{padding:24px 0 36px;color:var(--muted);font-size:.82rem}
+  @media (max-width:860px){
+    .bar nav{display:none}
+    .hero .wrap{grid-template-columns:1fr}
+    .hero h1{font-size:1.9rem}
+    .teach,.row{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="wrap">
+    <a class="me" href="https://shailkushwaha.github.io">Shail <span>Kushwaha</span></a>
+    <nav>
+      <a href="#certifications">Certifications</a>
+      <a href="#prompts">20 prompts</a>
+      <a href="#teach">How I teach</a>
+      <a href="#fit">The fit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="pill">Application · Merchant Support Advisor, Canada Pacific</span>
+      <h1>Every automation is one sentence. <em>I teach merchants how to say it.</em></h1>
+      <p>I coach small-business advertisers at Pinterest, I've run a business of my own, and I use AI every day to investigate and prepare. For my application video I built a Shopify store, a low-stock alert in Shopify Flow with Sidekick, and a two-minute lesson on the When / If / Then rule.</p>
+      <div class="btns">
+        <a class="btn solid" href="https://youtube.com/shorts/z5EzoZHDXGg" target="_blank" rel="noopener">Watch on YouTube</a>
+        <a class="btn line" href="#prompts">Get the 20 prompts</a>
+      </div>
+    </div>
+    <div class="video"><iframe src="https://www.youtube.com/embed/z5EzoZHDXGg" title="Every Shopify automation is one sentence: When, If, Then" allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+  </div>
+</header>
+
+<section id="certifications">
+  <div class="wrap">
+    <div class="eyebrow">Certifications</div>
+    <h2>Certified in ads, AI and product</h2>
+    <p class="lede">Ten certifications earned in the last year, with a focus on AI fluency and on the ad products I support merchants with every day.</p>
+    <div class="certs">
+      <div class="card cert ai"><small>Anthropic</small><b>AI Fluency: Framework &amp; Foundations</b><span>2026</span></div>
+      <div class="card cert ai"><small>Anthropic</small><b>Claude 101</b><span>2026</span></div>
+      <div class="card cert ai"><small>Anthropic</small><b>Claude Code 101</b><span>2026</span></div>
+      <div class="card cert ai"><small>Microsoft &amp; LinkedIn</small><b>Career Essentials in Generative AI</b><span>2026</span></div>
+      <div class="card cert"><small>Pinterest</small><b>Certified Media Planner</b><span>2026</span></div>
+      <div class="card cert"><small>Pinterest</small><b>Advertising Essentials</b><span>2026</span></div>
+      <div class="card cert"><small>Pinterest</small><b>Performance Essentials</b><span>2026</span></div>
+      <div class="card cert"><small>Pinterest</small><b>Shopping Essentials</b><span>2026</span></div>
+      <div class="card cert"><small>Google</small><b>Google Ads Search Certification</b><span>2026</span></div>
+      <div class="card cert"><small>IBM</small><b>Product Management</b><span>2025</span></div>
+    </div>
+    <p class="edu">Also: M.Sc. Enterprise Management (Digital Media &amp; Marketing), University of Warwick · CMI Level 7 Certificate in Management &amp; Leadership</p>
+  </div>
+</section>
+
+<section id="prompts" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="eyebrow">Free resource</div>
+    <h2>20 When / If / Then prompts for Shopify Flow</h2>
+    <p class="lede">Copy a sentence into Sidekick inside Shopify Flow and it drafts the workflow for you. Each one is named after the problem it solves, so a merchant can find the one they need.</p>
+    <div class="filters" role="group" aria-label="Filter prompts">
+      <button type="button" data-f="all" aria-pressed="true">All 20</button>
+      <button type="button" data-f="Inventory" aria-pressed="false">Inventory</button>
+      <button type="button" data-f="Customers" aria-pressed="false">Customers</button>
+      <button type="button" data-f="Orders" aria-pressed="false">Orders</button>
+      <button type="button" data-f="Revenue" aria-pressed="false">Revenue</button>
+    </div>
+    <div class="prompts" id="list"></div>
+    <div class="tip"><b>Before you turn any of these on:</b> Sidekick saves new workflows switched off. Read each box, change the numbers and email addresses to suit your store, and test on a draft product first. Some actions (marketing emails, for example) need Shopify Email or another app installed, and available options can vary by plan.</div>
+  </div>
+</section>
+
+<section id="teach">
+  <div class="wrap">
+    <div class="eyebrow">How I teach</div>
+    <h2>Explain, demonstrate, then let them try</h2>
+    <p class="lede">The posting asks for a teacher's instinct for when to do which. Here's how my video uses all three.</p>
+    <div class="teach">
+      <div class="card"><span class="b w">Explain</span><h3>Name the idea first</h3><p>One rule a merchant can remember: When something happens, If something is true, Then do something. I show where everyday speech mixes the When and the If.</p></div>
+      <div class="card"><span class="b i">Demonstrate</span><h3>Show it in the real tool</h3><p>I type the sentence into Sidekick, open each box Sidekick builds, then test it on a draft product so the merchant sees it work.</p></div>
+      <div class="card"><span class="b t">Let them try</span><h3>Hand it over</h3><p>The video ends with a challenge: write the sentence for tagging VIP customers. The merchant leaves able to build the next one on their own.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="fit" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="eyebrow">The fit</div>
+    <h2>What the role asks for, and what I've done</h2>
+    <div class="match">
+      <div class="card row"><div class="ask">Troubleshoot alongside merchants and coach them through the unfamiliar</div><div class="proof"><b>That's my day at Pinterest.</b> I walk small-business advertisers through campaign setup and fixes, and I'm on the team rolling out Pinterest's AI ad features to SMBs across North America.</div></div>
+      <div class="card row"><div class="ask">Understand their business, their context, and what's at stake</div><div class="proof"><b>I've been the merchant.</b> I co-founded GNE Organics and led sales for Fresh India Organics, an online and export food brand.</div></div>
+      <div class="card row"><div class="ask">Help them feel more capable of handling tomorrow's problem</div><div class="proof"><b>I teach self-serve.</b> I show advertisers how to build custom reports and schedule them to their own inbox, so they don't need me for the next one.</div></div>
+      <div class="card row"><div class="ask">Use AI to investigate and prepare</div><div class="proof"><b>Four AI tools, every day.</b> I built a custom agent that reviews my whole book of business daily and weekly and suggests next steps. I've also built custom GPTs and Power Automate workflows.</div></div>
+      <div class="card row"><div class="ask">Meet people where they are</div><div class="proof"><b>80–120 conversations a day</b> with career changers and newcomers to Canada at Canadian Business College, across phone, email, text and video.</div></div>
+      <div class="card row"><div class="ask">Teach us something in a 1–2 minute video</div><div class="proof"><b>Done, with a real store.</b> I built the workflow with Sidekick, opened each box, and confirmed it fires on a draft product before recommending that tip on camera.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="cta">
+  <div class="wrap">
+    <h2>Let's help merchants keep going</h2>
+    <p class="lede">Based in Toronto, Ontario. Permanent Resident, set up to work remotely across Canada.</p>
+    <div class="btns">
+      <a class="btn solid" href="mailto:shail97@hotmail.com?subject=Shopify%20Merchant%20Support%20Advisor">Email me</a>
+      <a class="btn line" href="https://www.linkedin.com/in/kushwahashail" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn line" href="https://shailkushwaha.github.io">Full profile</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><footer>© 2026 Shail Samar Kushwaha · Personal application page. Not affiliated with or endorsed by Shopify.</footer></div>
+
+<script>
+{
+const P = [
+  ["Inventory","Get a low-stock alert before you sell out","a product variant's inventory changes","it drops below 5 for the first time","email me the product name and stock level"],
+  ["Inventory","Hide products that sell out completely","a product variant goes out of stock","every variant of that product is out of stock","hide the product from my online store"],
+  ["Inventory","Put products back on sale when they're restocked","a product variant comes back in stock","the product is tagged auto-publish","publish the product to my online store"],
+  ["Inventory","Warn your supplier when something runs out","a product variant goes out of stock","the product's vendor is my main supplier","email my purchasing contact with the product and variant"],
+  ["Inventory","Catch products launched with no stock","a product's status changes to active","its total inventory is 0","email me so I can add stock before customers see it"],
+  ["Inventory","Finish new listings before they go live","a product is added to my store","it has no product image","email me a reminder to finish the listing"],
+  ["Customers","Spot and reward VIP customers","an order is paid","the customer's total spent is over $500","add the tag VIP to the customer"],
+  ["Customers","Welcome first-time buyers","an order is paid","it is the customer's first order","add the tag new-customer to the customer"],
+  ["Customers","Grow your newsletter list","a customer account is created","they accept email marketing","add the tag newsletter to the customer"],
+  ["Customers","Ask happy customers for a review","an order is fulfilled","the customer has 2 or more orders","add the tag review-request to the customer"],
+  ["Orders","Get a heads-up on big orders","an order is created","the order total is over $300","email my team the order number and total"],
+  ["Orders","Hold risky orders before they ship","an order's fraud risk is analyzed","the risk level is high","hold fulfillment and email me to review it"],
+  ["Orders","Route wholesale orders to the right team","an order is created","the customer is tagged wholesale","tag the order wholesale and email my wholesale team"],
+  ["Orders","Prep local pickup orders","an order is created","the delivery method is local pickup","tag the order pickup and email the store team"],
+  ["Orders","Gift-wrap orders that need it","an order is created","the order note contains the word gift","add the tag gift-wrap to the order"],
+  ["Orders","Keep pre-orders separate","an order is created","any item in it is tagged preorder","add the tag preorder to the order"],
+  ["Orders","Flag international orders for customs","an order is created","the shipping country is not Canada","tag the order international and email me to prepare customs forms"],
+  ["Revenue","Win back abandoned checkouts","a customer abandons checkout","the cart value is over $50","send them a reminder email with a link back to their cart"],
+  ["Revenue","Review large refunds","a refund is created","the refund is over $100","email me the order and refund amount to review"],
+  ["Revenue","Track Black Friday discount orders","an order is created","the discount code BFCM was used","add the tag bfcm to the order for reporting"]
+];
+const list = document.getElementById("list");
+const esc = s => s.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+list.innerHTML = P.map(function (p, i) {
+  return '<article class="card prompt" data-cat="' + esc(p[0]) + '">' +
+    '<header><div><div class="cat">' + esc(p[0]) + '</div><h3>' + esc(p[1]) + '</h3></div><span class="num">' + (i + 1) + '</span></header>' +
+    '<div class="line"><span class="b w">WHEN</span><span>' + esc(p[2]) + '</span></div>' +
+    '<div class="line"><span class="b i">IF</span><span>' + esc(p[3]) + '</span></div>' +
+    '<div class="line"><span class="b t">THEN</span><span>' + esc(p[4]) + '</span></div>' +
+    '<button type="button" class="copy" data-i="' + i + '">Copy prompt</button></article>';
+}).join("");
+const sentence = p => "When " + p[2] + ", if " + p[3] + ", then " + p[4] + ".";
+list.addEventListener("click", e => {
+  const b = e.target.closest(".copy"); if (!b) return;
+  const text = sentence(P[+b.dataset.i]);
+  const done = () => { b.textContent = "Copied"; setTimeout(() => b.textContent = "Copy prompt", 1600); };
+  try { navigator.clipboard.writeText(text).then(done, () => { prompt("Copy this prompt:", text); }); } catch (err) { prompt("Copy this prompt:", text); }
+});
+document.querySelectorAll(".filters button").forEach(btn => btn.addEventListener("click", () => {
+  document.querySelectorAll(".filters button").forEach(b => b.setAttribute("aria-pressed", b === btn));
+  const f = btn.dataset.f;
+  list.querySelectorAll(".prompt").forEach(c => c.style.display = (f === "all" || c.dataset.cat === f) ? "" : "none");
+}));
+}
+</script>
+</body>
+</html>
